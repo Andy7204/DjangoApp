@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Is it New years?</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .textp {
+            color: red;
+            font-size: 90px;
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
+    <link rel="stylesheet" href="{%static 'newyear/styles.css'%}">
+</head>
+<body>
+    {% if newyear  %}
+        <h1 class = "textp">YES</h1>
+    {% else %}
+        <h1 class = "textp">NO</h1>
+    {% endif %}
+  
+    
+</body>
+</html>
